@@ -1,0 +1,15 @@
+{
+  "originHash" : "d9d204e21b0c3700ce2c9fbcfd735ab2733d40c402b11f88d90107f65351c8d6",
+  "pins" : [
+    {
+      "identity" : "rnetworkkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhytthm/RNetworkKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "12bdac8b3821df83e26d149c4c17e95a8ce20358"
+      }
+    }
+  ],
+  "version" : 3
+}

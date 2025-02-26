@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AD821FE82D6F3DA100E86DA5 /* RNetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD821FE72D6F3DA100E86DA5 /* RNetworkKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ADAEA0BA2D6EEC0000A12F9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ADAEA0A32D6EEBFE00A12F9F /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADAEA0B92D6EEC0000A12F9F /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADAEA0C32D6EEC0000A12F9F /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD04A2272D6F1BD300B9ACFB /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD04A2282D6F1BD300B9ACFB /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD04A2292D6F1BD300B9ACFB /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD821FE82D6F3DA100E86DA5 /* RNetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,18 +96,10 @@
 				ADAEA0A52D6EEBFE00A12F9F /* NetworkLayer */,
 				ADAEA0BC2D6EEC0000A12F9F /* NetworkLayerTests */,
 				ADAEA0C62D6EEC0000A12F9F /* NetworkLayerUITests */,
-				ADAEA0A42D6EEBFE00A12F9F /* Products */,
+				AD04A2272D6F1BD300B9ACFB /* NetworkLayer.app */,
+				AD04A2282D6F1BD300B9ACFB /* NetworkLayerTests.xctest */,
+				AD04A2292D6F1BD300B9ACFB /* NetworkLayerUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		ADAEA0A42D6EEBFE00A12F9F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ADAEA0A32D6EEBFE00A12F9F /* NetworkLayer.app */,
-				ADAEA0B92D6EEC0000A12F9F /* NetworkLayerTests.xctest */,
-				ADAEA0C32D6EEC0000A12F9F /* NetworkLayerUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +122,10 @@
 			);
 			name = NetworkLayer;
 			packageProductDependencies = (
+				AD821FE72D6F3DA100E86DA5 /* RNetworkKit */,
 			);
 			productName = NetworkLayer;
-			productReference = ADAEA0A32D6EEBFE00A12F9F /* NetworkLayer.app */;
+			productReference = AD04A2272D6F1BD300B9ACFB /* NetworkLayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ADAEA0B82D6EEC0000A12F9F /* NetworkLayerTests */ = {
@@ -150,7 +148,7 @@
 			packageProductDependencies = (
 			);
 			productName = NetworkLayerTests;
-			productReference = ADAEA0B92D6EEC0000A12F9F /* NetworkLayerTests.xctest */;
+			productReference = AD04A2282D6F1BD300B9ACFB /* NetworkLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		ADAEA0C22D6EEC0000A12F9F /* NetworkLayerUITests */ = {
@@ -173,7 +171,7 @@
 			packageProductDependencies = (
 			);
 			productName = NetworkLayerUITests;
-			productReference = ADAEA0C32D6EEC0000A12F9F /* NetworkLayerUITests.xctest */;
+			productReference = AD04A2292D6F1BD300B9ACFB /* NetworkLayerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,8 +206,11 @@
 			);
 			mainGroup = ADAEA09A2D6EEBFD00A12F9F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AD821FE62D6F3DA100E86DA5 /* XCRemoteSwiftPackageReference "RNetworkKit" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = ADAEA0A42D6EEBFE00A12F9F /* Products */;
+			productRefGroup = ADAEA09A2D6EEBFD00A12F9F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -293,7 +294,7 @@
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +321,7 @@
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,6 +564,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD821FE62D6F3DA100E86DA5 /* XCRemoteSwiftPackageReference "RNetworkKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rhytthm/RNetworkKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD821FE72D6F3DA100E86DA5 /* RNetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD821FE62D6F3DA100E86DA5 /* XCRemoteSwiftPackageReference "RNetworkKit" */;
+			productName = RNetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADAEA09B2D6EEBFE00A12F9F /* Project object */;
 }
